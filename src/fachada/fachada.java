@@ -5,6 +5,7 @@
  */
 package fachada;
 
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.table.DefaultTableModel;
 import modelo.modelo;
 
@@ -31,6 +32,9 @@ import modelo.modelo;
         public DefaultTableModel listarClientes(){
             return m.listarClientes();
         }
+        public DefaultComboBoxModel listarClientesComboBox(){
+            return m.listarClientesComboBox();
+        }
         
     //-----------Articulos------------//
         
@@ -49,6 +53,9 @@ import modelo.modelo;
         
         public DefaultTableModel listarArticulos(){
             return m.listarArticulos();
+        }
+        public DefaultComboBoxModel listarArticulosComboBox(){
+            return m.listarArticulosComboBox();
         }
          
          
